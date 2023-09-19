@@ -16,6 +16,17 @@ h1 {
     color: var(--blue);
 }
 
+h2 {
+    color: var(--blue);
+    font-size: x-large;
+}
+
+h2.white {
+    color: #fff;
+    font-size: x-large;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     background-color: #fff;
@@ -51,7 +62,7 @@ nav a {
     font-size: medium;
 }
 
-li {
+li.navLi {
     padding-left: 10%;
     align-content: center;
 
@@ -66,7 +77,7 @@ li a:focus {
     justify-content: center;
 } */
 
-img {
+.mainImg {
     position: relative;
     /* top: 0;
     left: 0; */
@@ -77,9 +88,9 @@ img {
     height: auto;
     border-bottom-left-radius: 100px;
     background: radial-gradient(#e66465, #9198e5);
-    background-image:
+    /* background-image:
         radial-gradient(#e66465, #9198e5),
-        url("https://pbs.twimg.com/profile_images/1631063073044791296/nSxRZwVL_400x400.jpg");
+        url("https://pbs.twimg.com/profile_images/1631063073044791296/nSxRZwVL_400x400.jpg"); */
     /* box-shadow: 0 0 10px rgba(0, 0, 10, 1); */
     /* max-height: 100%;
     
@@ -102,7 +113,9 @@ img {
     right: 0;
     width: 104%;
     height: 90%;
-    max-width: 500px;
+    /* max-width: 500px; */
+    max-width: 420px;
+    max-height: 400px;
     /*top: 30px;
     left: 30px; */
     color: var(--lightBlue);
@@ -135,7 +148,7 @@ img {
     font-size: 20px;
     /* padding-left: 40px; */
     /* max-width: 40%; */
-    height: 0;
+    /* height: 0; */
     max-height: 100px;
     width: 65%;
     padding-right: 15%;
@@ -144,8 +157,8 @@ img {
 }
 
 main {
-    padding-right: 10%;
-    padding-left: 10%;
+    padding-right: 8%;
+    padding-left: 8%;
 
     /* margin: 20px auto; */
     /* padding: 20px; */
@@ -154,9 +167,10 @@ main {
     align-items: start;
     display: flex;
     justify-content: center;
-    height: 75%;
+    height: 55%;
 
 }
+
 
 p.longParagraph {
     /* display: block; */
@@ -226,21 +240,131 @@ p.longParagraph {
 }
 
 .aboutMe {
-    height: 100%;
+    height: 70%;
     width: 100%;
-    background-color: var(--blue);
-    justify-content: center;
+    background-color: #fff;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* display: flex; */
+    /* direction: vertical; */
+
+    display: inline-flex;
+    /* align-items items in column */
+    flex-direction: column;
+    /* center items horizontally */
     align-items: center;
-    display: flex;
+    /* center items vertically */
+    /* justify-content: center; */
+    padding-top: 8%;
 }
 
 .aboutMeContent {
-    height: 50%;
+    height: 60%;
     width: 40%;
-    background-color: #fff;
+    background-color: var(--blue);
     border-radius: 10px;
-    
-    
+
+    display: inline-flex;
+    /* align-items items in column */
+    flex-direction: column;
+    /* center items horizontally */
+    align-items: center;
+    /* center items vertically */
+    justify-content: center;
+
+
+
+}
+
+.aboutMeText {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    /* padding: 10%; */
+    width: 90%;
+    height: 90%;
+}
+
+/* new */
+
+.contactMe {
+    height: 50%;
+    background-color: var(--blue);
+    display: flex;
+    /* align-items items in column */
+    /* flex-direction: column; */
+    /* center items horizontally */
+    align-items: center;
+    /* center items vertically */
+    justify-content: center;
+}
+
+ul.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+
+ul.social-links li {
+    display: flex;
+    padding: 20px;
+
+}
+
+ul.social-links li a {
+    padding: 5px;
+    opacity: 0.6;
+}
+
+/* ul.social-links li.label {
+    /* font-size: 20px; */
+/* opacity: 0.6; */
+/* font-weight: 400; */
+/* } */
+
+ul.social-links li a:hover {
+    opacity: 1;
+}
+
+ul.social-links li a img {
+    max-height: 40px;
+}
+
+.socialMediaIMG {}
+
+footer {
+    padding: 0;
+}
+
+
+@media only screen and (max-width: 700px) {
+    main {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+    justify-content: center;
+      height: 55%;
+    }
+    .mainText{
+        
+    }
+    .aboutMeText{
+        font-size: 14px;
+    }
+    .aboutMeContent {
+        width: 70%;
+        height: 90%;
+    }
+    .contactMe {
+        margin-top: 5%;
+        height: 25%;
+        
+    }
+    h2.white {
+        color: #fff;
+        font-size: medium;
+    }
     
 }
 

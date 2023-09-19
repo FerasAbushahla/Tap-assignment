@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style/style.css">
+    <!-- <link href="style/bootstrap.min.css" rel="stylesheet">
+    <link href="style/bootstrap-theme.css" rel="stylesheet"> -->
+
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
     <script src="https://kit.fontawesome.com/607df00a3c.js" crossorigin="anonymous"></script>
 </head>
@@ -16,52 +20,64 @@
     </header> -->
     <nav>
         <ul>
-            <li><a href="#home"><i class="fa-solid fa-house"></i>Home</a></li>
-            <li><a href="#about"><i class="fa-solid fa-user"></i>About Me</a></li>
-            <li><a href="#contact"><i class="fa-solid fa-phone"></i>Contact Me</a></li>
+            <li class="navLi"><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+            <li class="navLi"><a href="#about"><i class="fa-solid fa-user"></i>About Me</a></li>
+            <li class="navLi"><a href="#contact"><i class="fa-solid fa-phone"></i>Contact Me</a></li>
         </ul>
     </nav>
-    <main>
+    <main id="home">
         <!-- <section> -->
-            <div class="mainText">
-                <p class="special-paragraphs">Welcome to my site</p>
-                <h1>Hi, I'm Feras, a Software <span class="special-words">Developer.</span></h1>
-                <p class="longParagraph">As an information technology specialist, I am passionate about solving problems
-                    using contemporary trends and technologies. My primary area of interest lies in mobile app
-                    development,
-                    and I have invested significant time exploring its different aspects. I am particularly fascinated
-                    by
-                    the bifold branches of mobile programming - Android and iOS - and have studied and practiced various
-                    related software technologies.
-                    I take pride in being a professional Dart/Flutter developer for both Android and iOS applications,
-                    and I
-                    have a considerable experience in native Android programming using Java. My ultimate goal has always
-                    been to create the best and smoothest user experience through my applications, which I believe is
-                    crucial in today's world to deliver the utmost benefits to users with ease.</p>
-                <div class="buttons">
-                    <button class="button1" name="button1">Hire me !</button>
-                    <button class="button2" name="button2"
-                        onclick="window.location.href='https://github.com/FerasAbushahla';">See My Projects !</button>
-                </div>
-
+        <div class="mainText">
+            <p class="special-paragraphs">Welcome to my site</p>
+            <h1>Hi, I'm Feras, a Software <span class="special-words">Developer.</span></h1>
+            <p class="longParagraph">As an information technology specialist, I am passionate about solving problems
+                using contemporary trends and technologies. My primary area of interest lies in mobile app
+                development,
+                and I have invested significant time exploring its different aspects. <a href="#about">see more...</a></p>
+            <div class="buttons">
+                <button class="button1" name="button1">Hire me !</button>
+                <button class="button2" name="button2"
+                    onclick="window.location.href='https://github.com/FerasAbushahla';">See My Projects !</button>
             </div>
-            <div class="image">
-                <div class="imageBox"></div>
-                <img src="https://pbs.twimg.com/profile_images/1631063073044791296/nSxRZwVL_400x400.jpg">
 
-            </div>
+        </div>
+        <div class="image">
+            <div class="imageBox"></div>
+            <img class="mainImg" src="https://pbs.twimg.com/profile_images/1631063073044791296/nSxRZwVL_400x400.jpg">
+
+        </div>
         <!-- </section> -->
-        
+
 
 
     </main>
-    <section id="About Me" class = "aboutMe">
-        <!-- <h2>About Me</h2> -->
+    <section id="about" class="aboutMe">
+        <h2>About Me</h2>
         <div class="aboutMeContent">
-
+            <p class="aboutMeText">“ As an information technology specialist, I am passionate about solving problems
+                using contemporary trends and technologies. My primary area of interest lies in mobile app development,
+                and I have invested significant time exploring its different aspects. I am particularly fascinated by
+                the bifold branches of mobile programming - Android and iOS - and have studied and practiced various
+                related software technologies.
+                I take pride in being a professional Dart/Flutter developer for both Android and iOS applications, and I
+                have a considerable experience in native Android programming using Java. My ultimate goal has always
+                been to create the best and smoothest user experience through my applications, which I believe is
+                crucial in today's world to deliver the utmost benefits to users with ease. ”</p>
         </div>
 
     </section>
+    <section id="contact" class="contactMe">
+
+        <h2 class="white">Feras Abushahla</h2>
+        <!-- <h2 class="white">Abushahla</h2> -->
+        <ul class="social-links">
+            <!-- <li><a href="#"><img class="socialMediaIMG" src="assets/behance.png"></a></li>
+            <li><a href="#"><img src="assets/dribbble.png"></a></li> -->
+            <li><a href='https://twitter.com/FerasAbushahla'><img src="assets/twitter.png"></a></li>
+            <li><a href='https://github.com/FerasAbushahla'><img src="assets/github.png"></a></li>
+        </ul>
+    </section>
+    <footer></footer>
 
 
     <!-- <main>
